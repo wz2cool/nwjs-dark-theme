@@ -2,12 +2,29 @@
 <html>
   <head>
     <title>Hello World!</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background-color: #212329;
+        overflow: hidden;
+      }
+      #header {
+        height: 25px;
+        background-color: #292b33;
+        -webkit-app-region: drag;
+      }
+      #content {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node.js
-    <script>
-      document.write(process.version);
-    </script>
+    <div id="header"></div>
+    <div id="content"><webview src="http://www.baidu.com"></webview></div>
   </body>
 </html>
