@@ -26,6 +26,7 @@
         height: 25px;
         width: 100%;
         -webkit-app-region: drag;
+        overflow: hidden;
       }
       #content {
         position: absolute;
@@ -33,13 +34,20 @@
         left: 0px;
         right: 0px;
         bottom: 0px;
+        overflow: hidden;
+      }
+      #webview {
+        overflow: hidden;
       }
     </style>
   </head>
   <body>
     <div id="header"></div>
     <div id="content">
-      <webview src="https://web.innodealing.com/dashboard/"></webview>
+      <webview
+        id="webview"
+        src="https://web.innodealing.com/dashboard/"
+      ></webview>
     </div>
   </body>
 </html>
