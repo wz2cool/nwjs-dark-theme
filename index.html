@@ -3,28 +3,43 @@
   <head>
     <title>Hello World!</title>
     <style>
-      html,
+      html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
       body {
         margin: 0;
+        padding: 0;
+        border: 1px solid red;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         background-color: #212329;
         overflow: hidden;
       }
       #header {
         height: 25px;
-        background-color: #292b33;
+        width: 100%;
         -webkit-app-region: drag;
       }
       #content {
         position: absolute;
         top: 25px;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
       }
     </style>
   </head>
   <body>
     <div id="header"></div>
-    <div id="content"><webview src="http://www.baidu.com"></webview></div>
+    <div id="content">
+      <webview src="https://web.innodealing.com/dashboard/"></webview>
+    </div>
   </body>
 </html>
